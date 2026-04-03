@@ -1,8 +1,9 @@
 #include <iostream>
+
 using namespace std;
 struct Student {
     int rollNumber;
-    char name[50];
+    char name[50]; 
     float marks;
 };
 
@@ -13,16 +14,15 @@ int main() {
     cin >> s.rollNumber;
 
     cout << "Enter Name: ";
-    getline(cin, s.name);
+    cin.getline(s.name, 50); 
 
     cout << "Enter Marks: ";
     cin >> s.marks;
 
-  
-    cout << "\n Student Details" << endl;
+    cout << "\n--- Student Details ---" << endl;
     cout << "Roll Number: " << s.rollNumber << endl;
-    cout << "Name:" << s.name << endl;
-    cout << "Marks:" << s.marks << endl;
+    cout << "Name : " << s.name << endl;
+    cout << "Marks: " << s.marks << endl;
 
     return 0;
 }
